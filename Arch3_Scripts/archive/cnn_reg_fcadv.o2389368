@@ -1,0 +1,46 @@
+===============================
+2389368.pbshpc
+khas004.hpc.iitd.ac.in
+khas009.hpc.iitd.ac.in
+===============================
+/home/cse/mtech/mcs202448/workingDir/Scripts
+Model_path: /home/cse/mtech/mcs202448/workingDir/models/CNN_regression/FC_ADV_pretrain_with_arch_1
+Transfer Learning Model path: /home/cse/mtech/mcs202448/workingDir/trained_models_arch_1/fc_m
+Train length: 239637
+Validation Length 34235
+Cuda is available:transferLearning
+Total Batches=4793 Valid Batches=4793
+Average mean square error in epoch 1 : 0.008825485817200064
+Train R2 score in epoch 1 : 0.5473336693174881
+Validation R2 score in epoch 1 : 0.5517034427207477
+
+Total Batches=4793 Valid Batches=4793
+Average mean square error in epoch 2 : 0.007764404630153437
+Train R2 score in epoch 2 : 0.6017643365348414
+Validation R2 score in epoch 2 : 0.5490349616726018
+
+Total Batches=4793 Valid Batches=4793
+Average mean square error in epoch 3 : 0.006960626432541762
+Train R2 score in epoch 3 : 0.6429911631642118
+Validation R2 score in epoch 3 : 0.5217651291447056
+
+Total Batches=4793 Valid Batches=4793
+Average mean square error in epoch 4 : 0.0059708221012180615
+Train R2 score in epoch 4 : 0.6937634414544163
+Validation R2 score in epoch 4 : 0.5282892653106136
+
+Total Batches=4793 Valid Batches=4793
+Average mean square error in epoch 5 : 0.00518632014241
+Train R2 score in epoch 5 : 0.7340050065632555
+Validation R2 score in epoch 5 : 0.4924338443359545
+
+Total Batches=4793 Valid Batches=4793
+Average mean square error in epoch 6 : 0.004541130705769416
+Train R2 score in epoch 6 : 0.7670825318914634
+Validation R2 score in epoch 6 : 0.4911539336277978
+
+Total Batches=4793 Valid Batches=4793
+Average mean square error in epoch 7 : 0.004195640034699257
+Train R2 score in epoch 7 : 0.7848057343550867
+Validation R2 score in epoch 7 : 0.48328453845440233
+

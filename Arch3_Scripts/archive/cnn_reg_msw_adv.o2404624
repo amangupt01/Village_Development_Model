@@ -1,0 +1,11 @@
+===============================
+2404624.pbshpc
+khas090.hpc.iitd.ac.in
+khas153.hpc.iitd.ac.in
+===============================
+/home/cse/mtech/mcs202448/workingDir/Scripts
+Model_path: /home/cse/mtech/mcs202448/workingDir/models/CNN_regression/MSW_ADV_0
+Transfer Learning Model path: /home/cse/mtech/mcs202448/workingDir/trained_models_arch_1/msw_m
+Device name:  cuda
+Train length: 239637
+Validation Length 34235

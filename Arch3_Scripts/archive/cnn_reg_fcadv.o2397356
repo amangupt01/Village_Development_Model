@@ -1,0 +1,12 @@
+===============================
+2397356.pbshpc
+khas001.hpc.iitd.ac.in
+khas161.hpc.iitd.ac.in
+===============================
+/home/cse/mtech/mcs202448/workingDir/Scripts
+Model_path: /home/cse/mtech/mcs202448/workingDir/models/CNN_regression/FC_RUD_pretrain_with_arch_1_3_fz_RUD_layers
+Transfer Learning Model path: /home/cse/mtech/mcs202448/workingDir/trained_models_arch_1/fc_m
+Device name:  cuda
+Train length: 239637
+Validation Length 34235
+Cuda is available:transferLearning
