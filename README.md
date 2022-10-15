@@ -24,3 +24,6 @@ The trained CNN models for arch1 of all indicators can be found [here](https://d
   * Now we will run the [Jupyter Notebook](PreProcessing_Data/Final_generate_village_centroids.ipynb), which takes the shape files of all villages and calculates the center.
   * Using the village centroid data obtained in the previous step, we will compute the nearest neighboring villages for each village: Follow the [script](PreProcessing_Data/find_out_nearest_neighbours_logic.ipynb)
   * Generate the nightlight and population features as explained above.
+  Post this follow the pipeline of individual model that you want to train and test.
+
+## Arch-1
