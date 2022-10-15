@@ -23,7 +23,7 @@ The trained CNN models for arch1 of all indicators can be found [here](https://d
   * The next step is to cut the shapes of villages from the shapefile of the state. Use the [script](PreProcessing_Images/cutVillage.sh) [You need to set the correct path to i) Where the state fill files are contained, ii) Where the state geojsons are present iii) Where you want the split files to be placed]
   * Now we will run the [Jupyter Notebook](PreProcessing_Data/Final_generate_village_centroids.ipynb), which takes the shape files of all villages and calculates the center.
   * Using the village centroid data obtained in the previous step, we will compute the nearest neighboring villages for each village: Follow the [script](PreProcessing_Data/find_out_nearest_neighbours_logic.ipynb)
-  * Generate the nightlight and population features as explained above.
+  * Generate the nightlight and population features as explained above.  
   Post this follow the pipeline of individual model that you want to train and test.
 
 ## Arch-1
