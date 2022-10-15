@@ -50,3 +50,15 @@ We retrain the CNN regression models for each level of each indicator.
 - Combine the obtained data with the nightlight and population features generated earlier.
 - Use similar scipts like that of arch2 to find neccesary indicators that ensure temporal transferability.
 - Train the regression model on the combined dataset using [script](Arch3_Scripts/Copy_arch3_regression_grid_search_new.ipynb)
+
+## Hypothesis Testing
+Use the scripts in the ```Hypothesis_Testing\``` directory to run and validate the hypothesis mentioned in the paper.
+
+## Visualisation and Error Analysis
+The following are the files and their purposes in the directory ```Visualisations & Error_Analysis```:-
+- ```plot.ipynb``` & ```plot_ntl.ipynb``` - these create development/nightlight encoded list of villages within a district as a geojsons. These geojsons can be imported to [geojson plotter](https://geojson.io/#map=2/20.0/0.0) to plot and analyse development. The plotted images looks like [this](Visualisations%20&%20Error_Analysis/bokaro.png)
+- ```Excluded_Villages.ipynb``` - this file collates the list of villages that were excluded from the analysis study either due to cloud cover or while recovering villages from the tiff tiles of states.
+- ```Error_analysis.ipynb``` - this file analysis the trends in the villages whose ADI values are miscalculated by the model
+- ```stats.ipynb``` - this file calculates the statewise mean and standard deviation of error in predicted and calculated ADIs. It also creates CDF plots between ADI_2001, ADI_2011 & ADI_2019
+- ```corelation.ipynb``` - analysis whether the decrement in the ADI values has a correlation with nightlights
+- ```occlusion.ipynb``` - helps validate if the CNN models learns important features on the map of villages. Overlaying the heatmaps on the actual village images lead to visualisations like [these](Visualisations%20&%20Error_Analysis/occlusion.png)
