@@ -1,8 +1,0 @@
-/var/spool/PBS/mom_priv/jobs/2396157.pbshpc.SC: line 18: PBS: command not found
-/var/spool/PBS/mom_priv/jobs/2396157.pbshpc.SC: line 20: PBS: command not found
-NOTE : Works with all available python packages in the module, check using conda list command
-For conda env creation we recommend apps/anaconda/3EnvCreation module
-Traceback (most recent call last):
-  File "exp1.py", line 64, in <module>
-    OUT = pickle.load(open('../Data/OUT.pickle','rb'))
-ModuleNotFoundError: No module named 'pandas.core.internals.managers'; 'pandas.core.internals' is not a package

@@ -42,3 +42,11 @@ Note that the CNN models are the same for Arch-1 & Arch-2
 - Use the [script](Arch2/Copy_arch3_regression_grid_search.ipynb) to train regression models on the selected feature for each indicator on each level. The trained regression models can be found [here](https://drive.google.com/drive/folders/1Wf_L2ZgYdpBnvazuvz5Au5Zk4ITtzI6X?usp=sharing)
 - After obtaining the regression outputs we run the [script](Arch2/Household_Indicators_Predictions.ipynb) to get the regression output on the test set
 - Finally to check the performance of the models we use clusters trained on groundtruth to discretize the output of Arch-2 and calculate the RMSE using [this](Arch2/Copy_of_Classification_Performance_Arch_2.ipynb)
+  
+## Arch3
+We retrain the CNN regression models for each level of each indicator. 
+- Use the training [scripts](Arch3_Scripts/trainmodel.py) on the same train-val image split as done in Arch-1. 
+- Use the [script](Arch3_Scripts/combine.py) to combine and make the outputs of all the models as well as the nearest neighbours data.
+- Combine the obtained data with the nightlight and population features generated earlier.
+- Use similar scipts like that of arch2 to find neccesary indicators that ensure temporal transferability.
+- Train the regression model on the combined dataset using [script](Arch3_Scripts/Copy_arch3_regression_grid_search_new.ipynb)
