@@ -36,3 +36,9 @@ The trained CNN models for arch1 of all indicators can be found [here](https://d
 - Trained models obatained can be found [here](https://drive.google.com/drive/folders/1eTUKyMq1z0dGoJaJ-BS80Q80T5Ucsrgq?usp=sharing)
 
 ## Arch-2
+Note that the CNN models are the same for Arch-1 & Arch-2
+- Use the [script](Arch2/Combining_nightlight_and_pop.ipynb) to combine all the features including nightlight, population, nearest neighbours to generate the final input for training regression models for Arch-2. The combined data for training can be found [here](https://drive.google.com/drive/folders/1LrTGcCuCWEnaKl4f9wII0Cobb-DxeSr4)
+- To perform temporal transferability of the trained model we use the [script](Arch2/Common_Indicators_Classification_2011.ipynb) to identify features that provide maximum temporal transferability.
+- Use the [script](Arch2/Copy_arch3_regression_grid_search.ipynb) to train regression models on the selected feature for each indicator on each level. The trained regression models can be found [here](https://drive.google.com/drive/folders/1Wf_L2ZgYdpBnvazuvz5Au5Zk4ITtzI6X?usp=sharing)
+- After obtaining the regression outputs we run the [script](Arch2/Household_Indicators_Predictions.ipynb) to get the regression output on the test set
+- Finally to check the performance of the models we use clusters trained on groundtruth to discretize the output of Arch-2 and calculate the RMSE using [this](Arch2/Copy_of_Classification_Performance_Arch_2.ipynb)
