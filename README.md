@@ -1,11 +1,12 @@
 # Village Development Model
-
-The trained CNN models for arch1 of all indicators can be found [here](https://drive.google.com/drive/folders/1eTUKyMq1z0dGoJaJ-BS80Q80T5Ucsrgq?usp=sharing)
   
 ## Directories and their functions : 
   * ```GEE_DataDownload\``` - These scripts are used to download the scripts from google earth Engine. They download RGB bands of respectives States of India.
   * ```PreProcessing_Images\``` - These scripts are just to cut the state tiff images into village images in png format. These crops are restricted to be fixed size of 150x150 pixels.
-  * ```PreProcessing_Data\Generate_VillageLevels\``` - These scripts are used to classify villages into levels of rudimentary, intermediate & advanced.
+  * ```PreProcessing_Data\``` - These scripts are used to classify villages into levels of rudimentary, intermediate & advanced. They also contain scripts to generate population and nightlight features.
+  * ```Arch1, Arch2 & Arch3_Scripts``` - These scripts are used to generate the features for each model, training models and also the evaluation scripts.
+  * ```Hypothesis_Testing``` - Performs the hypothesis validation based on the predicted outputs.
+  * ```Visualisations & Error_Analysis``` - These scripts generate development/nightlight encoded geojsons to visualise the development of villages. Also contains the scripts for occlusion studies, error analysis & statistics.
 
 ## Generating Nightlight Data
   * Download the year wise tif file from the [site](https://doi.org/10.7910/DVN/YGIVCD)
