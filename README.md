@@ -27,3 +27,12 @@ The trained CNN models for arch1 of all indicators can be found [here](https://d
   Post this follow the pipeline of individual model that you want to train and test.
 
 ## Arch-1
+1. Generating Features
+- We first run clustering on the raw census data to generate levels of each census indicator like BF, FC, ASSET etc, using the [script](Arch1/Get_unoutliered_labels_indicators_for_district.ipynb)
+- Use [scripts](Arch1/dataset_maker.py) to create an 80:20 split in datasets for generating the training and testing data sets. This creates a train and test set of each cluster(level) for each indicator. The directory structure for each indicator should look like [this](Arch1/directory_structure.png)
+- In the generated dataset, there was Class Imbalance with cluster-1 having fewer villages, so data augmentation was performed using the [script](Arch1/dataaugment_literacy.py) (Done only in BF and Literacy)
+2. Training the CNN Model
+- We also use penalty functions to handle class imbalance for indicators literacy and BF. {Both use different loss functions} Check the [script](Arch1/train_model_weight_balance_new_literacy.py). Not for the other three indicators i.e. MSW, FC & Assets which don't have class imbalance we don't use augmentation or penalty functions.
+- Trained models obatained can be found [here](https://drive.google.com/drive/folders/1eTUKyMq1z0dGoJaJ-BS80Q80T5Ucsrgq?usp=sharing)
+
+## Arch-2
