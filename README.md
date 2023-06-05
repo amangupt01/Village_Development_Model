@@ -1,5 +1,5 @@
 # Village Development Model
-  
+The complete dataset can be found [here](https://drive.google.com/drive/folders/1xtaTGiaPJxDLr2t4RRqHYyJBkS3NcXTm?usp=sharing) 
 ## Directories and their functions : 
   * ```GEE_DataDownload\``` - These scripts are used to download the scripts from google earth Engine. They download RGB bands of respectives States of India.
   * ```PreProcessing_Images\``` - These scripts are just to cut the state tiff images into village images in png format. These crops are restricted to be fixed size of 150x150 pixels.
